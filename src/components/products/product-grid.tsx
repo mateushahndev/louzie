@@ -1,0 +1,112 @@
+"use client"
+
+import { useState } from 'react'
+import Link from 'next/link'
+import { ShoppingBag, Plus } from 'lucide-react'
+import { Badge } from '@/components/ui/badge'
+import { useCart } from '@/contexts/cart-context'
+import { products, type Product } from '@/data/products'
+
+interface ProductGridProps {
+  category?: string
+}
+
+export function ProductGrid({ category }: ProductGridProps) {
+  const { dispatch } = useCart()
+  const [addedProduct, setAddedProduct] = useState<string | null>(null)
+
+  const filteredProducts = category
+    ? products.filter((p) => p.category === category)
+    : products
+
+  const handleAddToCart = (product: Product) => {
+    dispatch({
+      type: 'ADD_ITEM',
+      payload: {
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        image: product.image,
+        size: product.sizes[0],
+        quantity: 1,
+      },
+    })
+    setAddedProduct(product.id)
+    setTimeout(() => setAddedProduct(null), 1500)
+  }
+
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+      {filteredProducts.map((product) => (
+        <div key={product.id} className="group relative">
+          {/* Product Image */}
+          <Link href={`/produtos/${product.id}`}>
+            <div className="relative aspect-[3/4] rounded-lg overflow-hidden bg-cream-100 mb-4">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+                loading="lazy"
+              />
+
+              {/* Sale badge */}
+              {product.originalPrice && (
+                <Badge variant="subtle" className="absolute top-3 left-3">
+                  Special Price
+                </Badge>
+              )}
+
+              {/* Hover overlay */}
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
+            </div>
+          </Link>
+
+          {/* Add to cart button */}
+          <button
+            onClick={(e) => {
+              e.preventDefault()
+              handleAddToCart(product)
+            }}
+            className={`
+              absolute bottom-20 right-4 p-3 rounded-full shadow-lg z-10
+              transition-all duration-300
+              ${addedProduct === product.id
+                ? 'bg-primary text-primary-foreground scale-110'
+                : 'bg-background/90 backdrop-blur-sm text-foreground hover:bg-background opacity-0 group-hover:opacity-100'
+              }
+            `}
+            aria-label={`Adicionar ${product.name} ao carrinho`}
+          >
+            {addedProduct === product.id ? (
+              <ShoppingBag className="w-4 h-4" />
+            ) : (
+              <Plus className="w-4 h-4" />
+            )}
+          </button>
+
+          {/* Product Info */}
+          <Link href={`/produtos/${product.id}`}>
+            <div className="space-y-1">
+              <p className="text-xs text-muted-foreground uppercase tracking-wider font-light">
+                {product.category}
+              </p>
+              <h3 className="text-sm font-medium leading-tight hover:text-primary transition-colors">
+                {product.name}
+              </h3>
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-medium">
+                  R$ {product.price.toFixed(2).replace('.', ',')}
+                </span>
+                {product.originalPrice && (
+                  <span className="text-xs text-muted-foreground line-through">
+                    R$ {product.originalPrice.toFixed(2).replace('.', ',')}
+                  </span>
+                )}
+              </div>
+            </div>
+          </Link>
+        </div>
+      ))}
+    </div>
+  )
+}
