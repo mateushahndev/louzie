@@ -8,12 +8,12 @@ import { StructuredData } from '@/components/seo/structured-data'
 
 
 export const metadata: Metadata = {
-  title: 'Skoziê | Moda Feminina e Alfaiataria Moderna',
-  description: 'Skoziê Closet de Moda — Vestidos, blusas, malhas e kimonos em alfaiataria moderna. Coleções elegantes para mulheres que valorizam estilo e autenticidade.',
-  keywords: 'moda feminina, alfaiataria, vestidos, blusas, malhas, kimonos, Skoziê, Maringá',
-  authors: [{ name: 'Skoziê' }],
+  title: 'Louziê | Moda Feminina e Alfaiataria Moderna',
+  description: 'Louziê Closet de Moda — Vestidos, blusas, malhas e kimonos em alfaiataria moderna. Coleções elegantes para mulheres que valorizam estilo e autenticidade.',
+  keywords: 'moda feminina, alfaiataria, vestidos, blusas, malhas, kimonos, Louziê, Maringá',
+  authors: [{ name: 'Louziê' }],
   openGraph: {
-    title: 'Skoziê | Moda Feminina e Alfaiataria Moderna',
+    title: 'Louziê | Moda Feminina e Alfaiataria Moderna',
     description: 'Peças exclusivas em alfaiataria moderna para mulheres que vestem sua personalidade.',
     type: 'website',
     locale: 'pt_BR',

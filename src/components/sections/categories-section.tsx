@@ -18,30 +18,36 @@ export function CategoriesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-          {categories.map((category) => (
-            <Link
-              key={category.slug}
-              href={`/categorias/${category.slug}`}
-              className="group relative aspect-[4/5] rounded-lg overflow-hidden"
-            >
-              <img
-                src={category.image}
-                alt={category.name}
-                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-white text-xl font-serif font-light">
-                  {category.name}
-                </h3>
-                <span className="text-white/70 text-sm flex items-center gap-1 mt-1 opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
-                  Explorar <ArrowRight className="w-3 h-3" />
-                </span>
-              </div>
-            </Link>
-          ))}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          {categories.map((category) => {
+            const href = category.slug === 'tudo' 
+              ? '/produtos' 
+              : `/categorias/${category.slug}`
+            
+            return (
+              <Link
+                key={category.slug}
+                href={href}
+                className="group relative aspect-[4/5] rounded-lg overflow-hidden"
+              >
+                <img
+                  src={category.image}
+                  alt={category.name}
+                  className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-white text-xl font-serif font-light">
+                    {category.name}
+                  </h3>
+                  <span className="text-white/70 text-sm flex items-center gap-1 mt-1 opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                    Explorar <ArrowRight className="w-3 h-3" />
+                  </span>
+                </div>
+              </Link>
+            )
+          })}
         </div>
       </div>
     </section>

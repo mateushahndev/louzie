@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Termos de Uso | Skoziê',
-  description: 'Termos de Uso da Skoziê — condições para utilização do site e compra de produtos.',
+  title: 'Termos de Uso | Louziê',
+  description: 'Termos de Uso da Louziê — condições para utilização do site e compra de produtos.',
 }
 
 export default function TermsOfUsePage() {
@@ -26,7 +26,7 @@ export default function TermsOfUsePage() {
             <section className="space-y-4">
               <h2 className="text-2xl font-serif font-light">1. Aceitação dos termos</h2>
               <p>
-                Ao acessar e utilizar o site da Skoziê, você concorda com estes 
+                Ao acessar e utilizar o site da Louziê, você concorda com estes 
                 Termos de Uso. Caso não concorde com algum dos termos, recomendamos 
                 que não utilize nossos serviços.
               </p>
@@ -35,7 +35,7 @@ export default function TermsOfUsePage() {
             <section className="space-y-4">
               <h2 className="text-2xl font-serif font-light">2. Uso do site</h2>
               <p>
-                O site da Skoziê é destinado a maiores de 18 anos ou menores 
+                O site da Louziê é destinado a maiores de 18 anos ou menores 
                 acompanhados de responsáveis legais. Você se compromete a:
               </p>
               <ul className="list-disc pl-6 space-y-2">
@@ -56,7 +56,7 @@ export default function TermsOfUsePage() {
                 e disponibilidade dos produtos podem ser alterados sem aviso prévio.
               </p>
               <p>
-                Em caso de erro no preço anunciado, a Skoziê se reserva o direito 
+                Em caso de erro no preço anunciado, a Louziê se reserva o direito 
                 de corrigir o valor e informar o cliente antes da confirmação do pedido.
               </p>
             </section>
@@ -70,7 +70,7 @@ export default function TermsOfUsePage() {
                 <li>Está ciente das condições de frete e prazo de entrega</li>
               </ul>
               <p>
-                A Skoziê se reserva o direito de cancelar pedidos em caso de 
+                A Louziê se reserva o direito de cancelar pedidos em caso de 
                 inconsistência nos dados fornecidos ou suspeita de fraude.
               </p>
             </section>
@@ -95,7 +95,7 @@ export default function TermsOfUsePage() {
               <p>
                 Todo o conteúdo do site — incluindo textos, imagens, logotipos, 
                 fotografias, design e código-fonte — é de propriedade exclusiva da 
-                Skoziê ou licenciado por terceiros. É proibida a reprodução total 
+                Louziê ou licenciado por terceiros. É proibida a reprodução total 
                 ou parcial sem autorização prévia por escrito.
               </p>
             </section>
@@ -103,7 +103,7 @@ export default function TermsOfUsePage() {
             <section className="space-y-4">
               <h2 className="text-2xl font-serif font-light">7. Limitação de responsabilidade</h2>
               <p>
-                A Skoziê não se responsabiliza por:
+                A Louziê não se responsabiliza por:
               </p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>
@@ -122,7 +122,7 @@ export default function TermsOfUsePage() {
             <section className="space-y-4">
               <h2 className="text-2xl font-serif font-light">8. Alterações nos termos</h2>
               <p>
-                A Skoziê se reserva o direito de alterar estes Termos de Uso a 
+                A Louziê se reserva o direito de alterar estes Termos de Uso a 
                 qualquer momento. As alterações entram em vigor imediatamente após 
                 a publicação no site. Recomendamos a consulta periódica desta página.
               </p>
@@ -143,12 +143,12 @@ export default function TermsOfUsePage() {
                 Para esclarecimentos sobre estes Termos de Uso, entre em contato 
                 pelo e-mail{' '}
                 <a
-                  href="mailto:contato@skozie.com.br"
+                  href="mailto:contato@louzie.com.br"
                   className="text-primary hover:underline"
                 >
-                  contato@skozie.com.br
+                  contato@louzie.com.br
                 </a>{' '}
-                ou WhatsApp (44) 99999-9999.
+                ou WhatsApp (68) 19999-9999.
               </p>
             </section>
           </div>

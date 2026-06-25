@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import { CartPageContent } from '@/components/cart/cart-page-content'
 
 export const metadata: Metadata = {
-  title: 'Carrinho | Skoziê',
-  description: 'Finalize sua compra na Skoziê. Confira os produtos no seu carrinho.',
+  title: 'Carrinho | Louziê',
+  description: 'Finalize sua compra na Louziê. Confira os produtos no seu carrinho.',
 }
 
 export default function CartPage() {

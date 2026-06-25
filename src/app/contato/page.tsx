@@ -2,8 +2,8 @@ import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export const metadata = {
-  title: 'Contato | Skoziê',
-  description: 'Entre em contato com a Skoziê — atendimento pessoal via WhatsApp, e-mail ou visite nossa loja em Maringá.',
+  title: 'Contato | Louziê',
+  description: 'Entre em contato com a Louziê — atendimento pessoal via WhatsApp, e-mail ou visite nossa loja em Maringá.',
 }
 
 export default function ContactPage() {
@@ -26,7 +26,7 @@ export default function ContactPage() {
               
               <div className="space-y-4">
                 <a
-                  href="https://wa.me/5544999999999"
+                  href="https://wa.me/5568199999999"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-sm hover:text-primary transition-colors"
@@ -34,18 +34,18 @@ export default function ContactPage() {
                   <MessageCircle className="w-5 h-5 text-caramei-500" />
                   <div>
                     <p className="font-medium">WhatsApp</p>
-                    <p className="text-muted-foreground">(44) 99999-9999</p>
+                    <p className="text-muted-foreground">(68) 19999-9999</p>
                   </div>
                 </a>
 
                 <a
-                  href="mailto:contato@skozie.com.br"
+                  href="mailto:contato@louzie.com.br"
                   className="flex items-center gap-3 text-sm hover:text-primary transition-colors"
                 >
                   <Mail className="w-5 h-5 text-caramei-500" />
                   <div>
                     <p className="font-medium">E-mail</p>
-                    <p className="text-muted-foreground">contato@skozie.com.br</p>
+                    <p className="text-muted-foreground">contato@louzie.com.br</p>
                   </div>
                 </a>
 
@@ -53,7 +53,7 @@ export default function ContactPage() {
                   <Phone className="w-5 h-5 text-caramei-500" />
                   <div>
                     <p className="font-medium">Telefone</p>
-                    <p className="text-muted-foreground">(44) 3030-3030</p>
+                    <p className="text-muted-foreground">(68) 3030-3030</p>
                   </div>
                 </div>
               </div>
@@ -70,7 +70,7 @@ export default function ContactPage() {
                     <p className="text-muted-foreground">
                       Rua das Palmeiras, 123
                       <br />
-                      Centro — Maringá, PR
+                      Centro — Feijó, AC
                     </p>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ export default function ContactPage() {
             className="font-light"
           >
             <a
-              href="https://wa.me/5544999999999"
+              href="https://wa.me/5568199999999"
               target="_blank"
               rel="noopener noreferrer"
             >

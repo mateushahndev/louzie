@@ -60,7 +60,7 @@ export function Navbar() {
             className="text-2xl md:text-3xl font-serif italic font-medium tracking-wide hover:opacity-80 transition-opacity"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Skoziê
+            Louziê
           </Link>
 
           {/* Desktop Navigation */}

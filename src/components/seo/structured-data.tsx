@@ -2,11 +2,11 @@ export function StructuredData() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ClothingStore',
-    name: 'Skoziê',
+    name: 'Louziê',
     description: 'Moda feminina e alfaiataria moderna. Vestidos, blusas, malhas e kimonos exclusivos.',
-    url: 'https://skozie.com.br',
-    telephone: '+5544999999999',
-    email: 'contato@skozie.com.br',
+    url: 'https://louzie.com.br',
+    telephone: '+5568199999999',
+    email: 'contato@louzie.com.br',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Rua das Palmeiras, 123',
@@ -29,8 +29,8 @@ export function StructuredData() {
       },
     ],
     sameAs: [
-      'https://instagram.com/skozie',
-      'https://facebook.com/skozie',
+      'https://instagram.com/louzie',
+      'https://facebook.com/louzie',
     ],
   }
 

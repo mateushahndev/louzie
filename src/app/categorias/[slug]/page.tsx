@@ -12,12 +12,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   if (!category) {
     return {
-      title: 'Categoria não encontrada | Skoziê',
+      title: 'Categoria não encontrada | Louziê',
     }
   }
 
   return {
-    title: `${category.name} | Skoziê`,
+    title: `${category.name} | Louziê`,
     description: `Confira nossa coleção de ${category.name.toLowerCase()} em alfaiataria moderna. Peças exclusivas e elegantes para você.`,
   }
 }

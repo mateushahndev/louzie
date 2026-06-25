@@ -29,7 +29,7 @@ type CartAction =
 const loadCartFromStorage = (): CartItem[] => {
   if (typeof window === 'undefined') return []
   try {
-    const saved = localStorage.getItem('skozie-cart')
+    const saved = localStorage.getItem('louzie-cart')
     return saved ? JSON.parse(saved) : []
   } catch {
     return []
@@ -39,7 +39,7 @@ const loadCartFromStorage = (): CartItem[] => {
 const saveCartToStorage = (items: CartItem[]) => {
   if (typeof window === 'undefined') return
   try {
-    localStorage.setItem('skozie-cart', JSON.stringify(items))
+    localStorage.setItem('louzie-cart', JSON.stringify(items))
   } catch {}
 }
 

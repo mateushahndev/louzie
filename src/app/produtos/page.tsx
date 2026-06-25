@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { ProductGrid } from '@/components/products/product-grid'
 
 export const metadata: Metadata = {
-  title: 'Produtos | Skoziê',
+  title: 'Produtos | Louziê',
   description: 'Confira nossa coleção completa de vestidos, blusas, malhas, kimonos e alfaiataria moderna feminina.',
 }
 

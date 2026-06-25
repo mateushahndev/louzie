@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidade | Skoziê',
-  description: 'Política de Privacidade da Skoziê — saiba como tratamos seus dados pessoais.',
+  title: 'Política de Privacidade | Louziê',
+  description: 'Política de Privacidade da Louziê — saiba como tratamos seus dados pessoais.',
 }
 
 export default function PrivacyPolicyPage() {
@@ -26,7 +26,7 @@ export default function PrivacyPolicyPage() {
             <section className="space-y-4">
               <h2 className="text-2xl font-serif font-light">1. Introdução</h2>
               <p>
-                A Skoziê leva a sério a privacidade dos seus dados. Esta política 
+                A Louziê leva a sério a privacidade dos seus dados. Esta política 
                 explica como coletamos, usamos, armazenamos e protegemos suas 
                 informações pessoais quando você utiliza nosso site.
               </p>
@@ -120,10 +120,10 @@ export default function PrivacyPolicyPage() {
               <p>
                 Para exercer esses direitos, entre em contato pelo e-mail{' '}
                 <a
-                  href="mailto:privacidade@skozie.com.br"
+                  href="mailto:privacidade@louzie.com.br"
                   className="text-primary hover:underline"
                 >
-                  privacidade@skozie.com.br
+                  privacidade@louzie.com.br
                 </a>
                 .
               </p>
@@ -147,9 +147,9 @@ export default function PrivacyPolicyPage() {
                 dados, entre em contato:
               </p>
               <ul className="list-none space-y-2 pl-0">
-                <li>E-mail: privacidade@skozie.com.br</li>
-                <li>WhatsApp: (44) 99999-9999</li>
-                <li>Endereço: Rua das Palmeiras, 123 — Maringá, PR</li>
+                <li>E-mail: privacidade@louzie.com.br</li>
+                <li>WhatsApp: (68) 19999-9999</li>
+                <li>Endereço: Rua das Palmeiras, 123 — Feijó, AC</li>
               </ul>
             </section>
           </div>

@@ -12,15 +12,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   if (!product) {
     return {
-      title: 'Produto não encontrado | Skoziê',
+      title: 'Produto não encontrado | Louziê',
     }
   }
 
   return {
-    title: `${product.name} | Skoziê`,
+    title: `${product.name} | Louziê`,
     description: product.description,
     openGraph: {
-      title: `${product.name} | Skoziê`,
+      title: `${product.name} | Louziê`,
       description: product.description,
       images: [product.image],
     },

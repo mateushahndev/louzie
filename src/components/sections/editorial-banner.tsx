@@ -9,7 +9,7 @@ export function EditorialBanner() {
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=1920&h=800&fit=crop"
-          alt="Editorial Skoziê"
+          alt="Editorial Louziê"
           className="object-cover w-full h-full"
           loading="lazy"
         />
@@ -26,7 +26,7 @@ export function EditorialBanner() {
             <span className="italic">transforma</span>
           </h2>
           <p className="text-white text-base md:text-lg leading-relaxed max-w-lg">
-            A Skoziê nasceu da paixão por vestir mulheres com peças que contam 
+            A Louziê nasceu da paixão por vestir mulheres com peças que contam 
             histórias. Cada detalhe é pensado para que você se sinta confiante 
             e autêntica em cada ocasião.
           </p>

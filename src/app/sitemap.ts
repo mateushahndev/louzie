@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { products, categories } from '@/data/products'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://skozie.com.br'
+  const baseUrl = 'https://louzie.com.br'
 
   const staticPages = [
     { url: baseUrl, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 1 },

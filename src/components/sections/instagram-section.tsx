@@ -11,7 +11,7 @@ export function InstagramSection() {
             Acompanhe
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-light">
-            @skozie
+            @louzie
           </h2>
           <p className="text-muted-foreground font-light">
             Inspire-se com looks e novidades no Instagram
@@ -22,14 +22,14 @@ export function InstagramSection() {
           {instagramPosts.map((post, index) => (
             <a
               key={index}
-              href="https://instagram.com/skozie"
+              href="https://instagram.com/louzie"
               target="_blank"
               rel="noopener noreferrer"
               className="aspect-square rounded-lg overflow-hidden group relative"
             >
               <img
                 src={post}
-                alt={`Skoziê Instagram post ${index + 1}`}
+                alt={`Louziê Instagram post ${index + 1}`}
                 className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
               />
@@ -42,13 +42,13 @@ export function InstagramSection() {
 
         <div className="text-center">
           <a
-            href="https://instagram.com/skozie"
+            href="https://instagram.com/louzie"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm hover:text-primary transition-colors font-light"
           >
             <Camera className="w-4 h-4" />
-            Siga @skozie no Instagram
+            Siga @louzie no Instagram
           </a>
         </div>
       </div>

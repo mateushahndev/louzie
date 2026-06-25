@@ -2,8 +2,8 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Sobre | Skoziê',
-  description: 'Conheça a história da Skoziê — moda feminina e alfaiataria moderna que veste sua presença.',
+  title: 'Sobre | Louziê',
+  description: 'Conheça a história da Louziê — moda feminina e alfaiataria moderna que veste sua presença.',
 }
 
 export default function AboutPage() {
@@ -16,13 +16,13 @@ export default function AboutPage() {
               Nossa História
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light">
-              Sobre a <span className="italic">Skoziê</span>
+              Sobre a <span className="italic">Louziê</span>
             </h1>
           </div>
 
           <div className="prose prose-lg font-light max-w-none space-y-6">
             <p>
-              A Skoziê nasceu da paixão por vestir mulheres com peças que contam 
+              A Louziê nasceu da paixão por vestir mulheres com peças que contam 
               histórias. Fundada em Maringá, Paraná, nossa loja se tornou referência 
               em moda feminina com foco em alfaiataria moderna e peças exclusivas.
             </p>
@@ -36,7 +36,7 @@ export default function AboutPage() {
               Acreditamos que a moda é uma forma de expressão. Por isso, nossas peças 
               são versáteis — funcionam tanto para o ambiente corporativo quanto para 
               ocasiões especiais, sempre com aquele toque de sofisticação que só a 
-              Skoziê oferece.
+              Louziê oferece.
             </p>
           </div>
 

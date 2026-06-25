@@ -24,7 +24,7 @@ export function HeroSection() {
                 <span className="italic text-caramei-500">veste sua presença</span>
               </h1>
               <p className="text-base md:text-lg text-muted-foreground font-light max-w-md leading-relaxed">
-                Peças que transcendem a moda passageira. Cada criação Skoziê é pensada 
+                Peças que transcendem a moda passageira. Cada criação Louziê é pensada 
                 para mulheres que valorizam elegância, conforto e autenticidade.
               </p>
             </div>
@@ -70,7 +70,7 @@ export function HeroSection() {
             <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=800&h=1067&fit=crop"
-                alt="Modelo vestindo peça Skoziê"
+                alt="Modelo vestindo peça Louziê"
                 className="object-cover w-full h-full"
                 loading="eager"
                 fetchPriority="high"

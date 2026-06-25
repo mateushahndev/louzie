@@ -32,7 +32,7 @@ export const products: Product[] = [
   {
     id: 'vestido-floral-longo',
     name: 'Vestido Floral Longo',
-    price: 449.00,
+    price: 689.00,
     originalPrice: 529.00,
     category: 'vestidos',
     image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=600&h=800&fit=crop',
@@ -176,7 +176,7 @@ export const products: Product[] = [
   {
     id: 'conjunto-malha-cinza',
     name: 'Conjunto Malha Cinza',
-    price: 449.00,
+    price: 689.00,
     originalPrice: 529.00,
     category: 'malhas',
     image: 'https://images.unsplash.com/photo-1434389677669-e08b4cda3a20?w=600&h=800&fit=crop',
@@ -284,6 +284,11 @@ export const products: Product[] = [
 ]
 
 export const categories = [
+  { 
+    name: 'Ver Tudo', 
+    slug: 'tudo', 
+    image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&h=400&fit=crop' 
+  },
   { name: 'Vestidos', slug: 'vestidos', image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600&h=400&fit=crop' },
   { name: 'Alfaiataria', slug: 'alfaiataria', image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&h=400&fit=crop' },
   { name: 'Blusas', slug: 'blusas', image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=600&h=400&fit=crop' },
@@ -296,20 +301,20 @@ export const categories = [
 export const testimonials = [
   {
     name: 'Ana Luiza',
-    city: 'Maringá, PR',
+    city: 'Feijó, AC',
     text: 'A qualidade das peças superou minhas expectativas. O caimento é perfeito, parece feito sob medida.',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop',
   },
   {
     name: 'Camila',
-    city: 'Londrina, PR',
+    city: 'Feijó, AC',
     text: 'Comprei o blazer caramelo e recebo elogios toda vez que uso. Entrega rápida e embalagem impecável.',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop',
   },
   {
     name: 'Juliana',
-    city: 'Curitiba, PR',
-    text: 'Finalmente encontrei uma loja que entende de moda feminina sem ser básica demais. Skoziê virou minha favorita.',
+    city: 'Feijó, AC',
+    text: 'Finalmente encontrei uma loja que entende de moda feminina sem ser básica demais. Louziê virou minha favorita.',
     image: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=200&h=200&fit=crop',
   },
 ]

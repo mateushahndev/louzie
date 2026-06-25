@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://skozie.com.br/sitemap.xml',
+    sitemap: 'https://louzie.com.br/sitemap.xml',
   }
 }

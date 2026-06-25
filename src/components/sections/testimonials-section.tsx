@@ -13,7 +13,7 @@ export function TestimonialsSection() {
             Elas Amam
           </h2>
           <p className="text-muted-foreground font-light max-w-md mx-auto">
-            Quem veste Skoziê, recomenda
+            Quem veste Louziê, recomenda
           </p>
         </div>
 
