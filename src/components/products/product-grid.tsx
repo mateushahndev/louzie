@@ -19,7 +19,9 @@ export function ProductGrid({ category }: ProductGridProps) {
     ? products.filter((p) => p.category === category)
     : products
 
-  const handleAddToCart = (product: Product) => {
+  const handleAddToCart = (e: React.MouseEvent, product: Product) => {
+    e.preventDefault()
+    e.stopPropagation()
     dispatch({
       type: 'ADD_ITEM',
       payload: {
@@ -39,7 +41,6 @@ export function ProductGrid({ category }: ProductGridProps) {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
       {filteredProducts.map((product) => (
         <div key={product.id} className="group relative">
-          {/* Product Image */}
           <Link href={`/produtos/${product.id}`}>
             <div className="relative aspect-[3/4] rounded-lg overflow-hidden bg-cream-100 mb-4">
               <img
@@ -48,30 +49,22 @@ export function ProductGrid({ category }: ProductGridProps) {
                 className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
               />
-
-              {/* Sale badge */}
               {product.originalPrice && (
                 <Badge variant="subtle" className="absolute top-3 left-3">
                   Special Price
                 </Badge>
               )}
-
-              {/* Hover overlay */}
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
             </div>
           </Link>
 
-          {/* Add to cart button */}
           <button
-            onClick={(e) => {
-              e.preventDefault()
-              handleAddToCart(product)
-            }}
+            onClick={(e) => handleAddToCart(e, product)}
             className={`
               absolute bottom-20 right-4 p-3 rounded-full shadow-lg z-10
               transition-all duration-300
               ${addedProduct === product.id
-                ? 'bg-primary text-primary-foreground scale-110'
+                ? 'bg-primary text-primary-foreground scale-110 opacity-100'
                 : 'bg-background/90 backdrop-blur-sm text-foreground hover:bg-background opacity-0 group-hover:opacity-100'
               }
             `}
@@ -84,7 +77,6 @@ export function ProductGrid({ category }: ProductGridProps) {
             )}
           </button>
 
-          {/* Product Info */}
           <Link href={`/produtos/${product.id}`}>
             <div className="space-y-1">
               <p className="text-xs text-muted-foreground uppercase tracking-wider font-light">

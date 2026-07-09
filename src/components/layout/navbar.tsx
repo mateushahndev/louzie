@@ -4,31 +4,10 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ShoppingBag, Menu, X } from 'lucide-react'
 import { useCart } from '@/contexts/cart-context'
-import { cn } from '@/lib/utils'
 
 export function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const { state, dispatch } = useCart()
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
-    }
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
-  // Fecha o menu mobile ao scrollar
-  useEffect(() => {
-    const handleScroll = () => {
-      if (isMobileMenuOpen) {
-        setIsMobileMenuOpen(false)
-      }
-    }
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [isMobileMenuOpen])
 
   // Trava scroll do body quando menu mobile está aberto
   useEffect(() => {
@@ -43,15 +22,7 @@ export function Navbar() {
   }, [isMobileMenuOpen])
 
   return (
-    <header
-      className={cn(
-        'fixed top-0 left-0 right-0 z-40 transition-all duration-500',
-        // Força fundo branco quando menu mobile está aberto ou quando scrollado
-        isMobileMenuOpen || isScrolled
-          ? 'bg-background/95 backdrop-blur-xl border-b border-border/50'
-          : 'bg-transparent'
-      )}
-    >
+    <header className="fixed top-0 left-0 right-0 z-40 bg-background">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
@@ -60,7 +31,7 @@ export function Navbar() {
             className="text-2xl md:text-3xl font-serif italic font-medium tracking-wide hover:opacity-80 transition-opacity"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Louziê
+            Skoziê
           </Link>
 
           {/* Desktop Navigation */}
@@ -128,7 +99,7 @@ export function Navbar() {
           </div>
         </div>
 
-        {/* Mobile Menu — sempre com fundo branco */}
+        {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden border-t border-border/50 py-6 space-y-1 bg-background">
             <Link

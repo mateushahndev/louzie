@@ -14,7 +14,7 @@ export function FeaturedProducts() {
   const featuredProducts = products.slice(0, 4)
 
   const handleAddToCart = (e: React.MouseEvent, product: typeof products[0]) => {
-    e.preventDefault() // Evita navegar ao clicar no botão de adicionar
+    e.preventDefault()
     e.stopPropagation()
     dispatch({
       type: 'ADD_ITEM',
@@ -49,7 +49,6 @@ export function FeaturedProducts() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {featuredProducts.map((product) => (
             <div key={product.id} className="group relative">
-              {/* Product Image — agora é um Link */}
               <Link href={`/produtos/${product.id}`}>
                 <div className="relative aspect-[3/4] rounded-lg overflow-hidden bg-cream-100 mb-4">
                   <img
@@ -58,20 +57,15 @@ export function FeaturedProducts() {
                     className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                   />
-
-                  {/* Sale badge */}
                   {product.originalPrice && (
                     <Badge variant="subtle" className="absolute top-3 left-3">
                       Special Price
                     </Badge>
                   )}
-
-                  {/* Hover overlay sutil */}
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
                 </div>
               </Link>
 
-              {/* Add to cart button */}
               <button
                 onClick={(e) => handleAddToCart(e, product)}
                 className={`
@@ -91,7 +85,6 @@ export function FeaturedProducts() {
                 )}
               </button>
 
-              {/* Product Info — agora é um Link */}
               <Link href={`/produtos/${product.id}`}>
                 <div className="space-y-1">
                   <h3 className="text-sm font-medium leading-tight hover:text-primary transition-colors">

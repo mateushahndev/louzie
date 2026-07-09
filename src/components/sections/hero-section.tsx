@@ -7,7 +7,6 @@ import { Button } from '@/components/ui/button'
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center bg-cream-50 overflow-hidden">
-      {/* Background subtle gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-cream-50 via-background to-cream-100" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40 relative z-10">
@@ -24,7 +23,7 @@ export function HeroSection() {
                 <span className="italic text-caramei-500">veste sua presença</span>
               </h1>
               <p className="text-base md:text-lg text-muted-foreground font-light max-w-md leading-relaxed">
-                Peças que transcendem a moda passageira. Cada criação Louziê é pensada 
+                Peças que transcendem a moda passageira. Cada criação Skoziê é pensada 
                 para mulheres que valorizam elegância, conforto e autenticidade.
               </p>
             </div>
@@ -52,7 +51,6 @@ export function HeroSection() {
               </Button>
             </div>
 
-            {/* Quick stats */}
             <div className="flex gap-8 pt-4">
               <div>
                 <p className="text-2xl font-serif">+500</p>
@@ -69,16 +67,14 @@ export function HeroSection() {
           <div className="relative">
             <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=800&h=1067&fit=crop"
-                alt="Modelo vestindo peça Louziê"
+                src="/home/hero.webp"
+                alt="Modelo vestindo peça Skoziê"
                 className="object-cover w-full h-full"
                 loading="eager"
                 fetchPriority="high"
               />
-              {/* Overlay subtle */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
             </div>
-            {/* Floating badge */}
             <div className="absolute -bottom-4 -left-4 bg-background rounded-lg shadow-xl p-4 border border-border/50">
               <p className="text-xs text-muted-foreground">Novidade</p>
               <p className="text-sm font-medium">Coleção Premium</p>

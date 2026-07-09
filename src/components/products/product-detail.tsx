@@ -39,7 +39,6 @@ export function ProductDetail({ product }: ProductDetailProps) {
 
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-      {/* Breadcrumb */}
       <Link
         href="/produtos"
         className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8"
@@ -48,9 +47,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
         Voltar para produtos
       </Link>
 
-      {/* Product Detail */}
       <div className="grid md:grid-cols-2 gap-12 lg:gap-20 mb-24">
-        {/* Image */}
         <div className="relative aspect-[3/4] rounded-lg overflow-hidden bg-cream-100">
           <img
             src={product.image}
@@ -65,7 +62,6 @@ export function ProductDetail({ product }: ProductDetailProps) {
           )}
         </div>
 
-        {/* Info */}
         <div className="space-y-8">
           <div className="space-y-4">
             <p className="text-sm text-muted-foreground uppercase tracking-wider font-light">
@@ -89,7 +85,6 @@ export function ProductDetail({ product }: ProductDetailProps) {
             </p>
           </div>
 
-          {/* Size Selector */}
           <div className="space-y-3">
             <p className="text-sm font-medium">
               Tamanho: <span className="font-normal text-muted-foreground">{selectedSize}</span>
@@ -113,7 +108,6 @@ export function ProductDetail({ product }: ProductDetailProps) {
             </div>
           </div>
 
-          {/* Add to Cart */}
           <Button
             onClick={handleAddToCart}
             size="xl"
@@ -132,7 +126,6 @@ export function ProductDetail({ product }: ProductDetailProps) {
             )}
           </Button>
 
-          {/* Info cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-border">
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Truck className="w-4 h-4 text-caramei-500" />
@@ -150,7 +143,6 @@ export function ProductDetail({ product }: ProductDetailProps) {
         </div>
       </div>
 
-      {/* Related Products */}
       {relatedProducts.length > 0 && (
         <div className="space-y-8">
           <div className="text-center space-y-2">

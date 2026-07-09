@@ -31,7 +31,6 @@ export function CartPageContent() {
   return (
     <div className="max-w-4xl mx-auto">
       <div className="grid md:grid-cols-3 gap-12">
-        {/* Items */}
         <div className="md:col-span-2 space-y-6">
           {state.items.map((item) => (
             <div
@@ -106,7 +105,6 @@ export function CartPageContent() {
           ))}
         </div>
 
-        {/* Summary */}
         <div className="space-y-6">
           <div className="bg-cream-50 rounded-lg p-6 border border-border/50 space-y-4">
             <h3 className="font-serif text-lg">Resumo</h3>
