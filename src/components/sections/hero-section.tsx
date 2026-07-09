@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen max-h-[1080px] flex items-center bg-cream-50 overflow-hidden">
+    <section className="relative h-[600px] md:h-[700px] flex items-center bg-cream-50 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-cream-50 via-background to-cream-100" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40 relative z-10">
