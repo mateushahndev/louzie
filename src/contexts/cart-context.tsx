@@ -104,7 +104,7 @@ function cartReducer(state: CartState, action: CartAction): CartState {
 
       saveCartToStorage(newItems)
       const totals = calculateTotals(newItems)
-      return { ...state, items: newItems, ...totals, isOpen: true }
+      return { ...state, items: newItems, ...totals }
     }
 
     case 'REMOVE_ITEM': {
