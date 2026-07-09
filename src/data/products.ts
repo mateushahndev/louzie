@@ -310,7 +310,7 @@ export const testimonials = [
   {
     name: 'Juliana',
     city: 'Curitiba, PR',
-    text: 'Finalmente encontrei uma loja que entende de moda feminina sem ser básica demais. Skoziê virou minha favorita.',
+    text: 'Finalmente encontrei uma loja que entende de moda feminina sem ser básica demais. Louziê virou minha favorita.',
     image: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=200&h=200&fit=crop',
   },
 ]
